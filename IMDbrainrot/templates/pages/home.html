@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% from "components/macros.html" import cta_button %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="home">
+        <section class="home__hero">
+            <div class="hero__left">
+                <h1>
+                    BrainRot IMDb
+                </h1>
+                <p>
+                    IMDb, but none of the movies exists and all the actors are wrong.
+                </p>
+
+            </div>
+            <div class="hero__right">
+                <img src="{{ url_for('static', filename='images/RyanGoslingTupac.jpg') }}" alt="hero" class="hero__img">
+            </div>
+        </section>
+
+        <section class="home__info">
+            <h2 class="home__title">
+                The movies that you never knew you needed
+            </h2>
+            <div>
+                <div class="info__text">
+                    <h3>Ryan Gosling is: Obama</h3>
+                    <p>
+                        In this hilarious reimagining of history, Ryan Gosling stars as Barack Obama in "Obama" Follow Obama’s rise from community organizer to the Oval Office, navigating political life’s absurdities with charm and humor.
+
+                        Joined by his sidekick Joe Biden (Bill Murray), Obama faces opponents like a conspiracy theorist with a pet raccoon and a senator who moonlights as a magician. They tackle wild challenges, from alien invasions to a White House haunted by Lincoln’s ghost.
+                        
+                        <br><br>
+                        Packed with laugh-out-loud moments and clever satire, "Obama" offers a comedic romp through a hilariously twisted version of presidential history. Get ready for an entertaining ride through America’s most outlandish past!
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/RyanGosling2.jpg') }}" alt="produce">
+            </div>
+            <div>
+                <div class="info__text">
+                    <h3>Mark Wahlberg is: Muhammad Ali</h3>
+                    <p>
+                        In this side-splitting twist on a legendary story, Mark Wahlberg stars as Muhammad Ali in "Mark Wahlberg is: Muhammad Ali." Witness Ali's iconic journey from boxing prodigy to global icon, all through the lens of Wahlberg's comedic genius.
+
+                        With his quirky trainer (Kevin Hart) by his side, Ali faces off against outlandish opponents, including a disco-dancing heavyweight and a trash-talking kangaroo. Along the way, he navigates zany media antics and a rival boxer who insists on settling scores with rap battles.
+                        
+                        <br><br>
+                        Full of laugh-out-loud moments and sharp satire, "Mark Wahlberg is: Muhammad Ali" delivers a knockout punch of comedy. Prepare for a wildly entertaining ride through a delightfully reimagined sports legend's life!
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/MarkWahlberg.jpg') }}" alt="produce">
+            </div>
+            <div>
+                <div class="info__text">
+                    <h3>Ryan Gosling is: Martin Luther King</h3>
+                    <p>
+                        In this uproarious retelling of a pivotal era, Ryan Gosling stars as Martin Luther King Jr. in "Ryan Gosling is: Martin Luther King." Experience the Civil Rights Movement with a comedic twist, as King’s journey is portrayed with Gosling's signature charm and humor.
+
+                        Joined by his eccentric advisor (Chris Rock), King navigates the struggle for equality while encountering a cast of quirky characters, including a rival activist who communicates solely through interpretive dance and a prankster senator with a penchant for practical jokes.
+                        
+                        <br><br>
+
+                        Packed with laugh-out-loud moments and clever satire, "Ryan Gosling is: Martin Luther King" reimagines history with a comedic flair, offering a wildly entertaining look at one of America’s most influential figures. Get ready for a hilarious and heartwarming ride through the annals of history!
+
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/RyanGosling1.jpg') }}" alt="produce">
+            </div>
+
+            <h2 class="home__title">
+                Search for the movies that rots your brain
+            </h2>
+            <div>
+                <div class="info__text">
+                    <h3>Cyber Dog</h3>
+                    <p>
+                        Get ready for an adventure like no other in "Cyberdog," the heartwarming and action-packed tale of Max, a dog that's part canine, part machine, and all best friend. When a brilliant scientist (played by Jeff Goldblum) combines cutting-edge technology with the loyalty of a golden retriever, Max is born—a cyber-enhanced dog with a heart of gold.
+
+                        Max's incredible abilities make him the ultimate companion and protector, but they also attract the attention of a nefarious tech mogul who wants to exploit him for his own sinister purposes. With the help of his human family and a team of quirky allies, Max must navigate high-tech dangers and outsmart the villains to keep his loved ones safe.
+                        
+                        <br><br>
+
+                        "Cyberdog" is a thrilling and touching story about the bond between a family and their extraordinary dog, blending humor, excitement, and heart in a way that will captivate audiences of all ages.
+                    </p>
+
+
+                </div>
+
+                <img src="{{ url_for('static', filename='images/Cyber-Dog.avif') }}" alt="produce">
+            </div>
+
+
+            <div>
+                <div class="info__text">
+                    <h3>Ryan Gosling is: Rosa Parks</h3>
+                    <p>
+                        In this bold and comedic reimagining of a historical icon, Ryan Gosling stars as Rosa Parks in "Ryan Gosling is: Rosa Parks." Experience the Civil Rights Movement with a fresh twist as Gosling brings his unique charm and wit to the story of Parks' courageous stand against racial segregation.
+
+                        <br><br>
+
+                        Follow Rosa, with her unlikely sidekick (Tiffany Haddish), as she navigates the turbulent times of the 1950s. Together, they encounter a cast of eccentric characters, including a bus driver who moonlights as a stand-up comedian and a rival activist who organizes protests with flash mobs.
+
+                        <br><br>
+                        
+                        Full of laugh-out-loud moments and clever satire, "Ryan Gosling is: Rosa Parks" offers a wildly entertaining take on a pivotal moment in history. Get ready for a hilarious and heartfelt ride through the story of one of America's most iconic heroes.
+
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/RyanGosling3.webp') }}" alt="produce">
+            </div>
+        </section>
+    </div>
+{% endblock %}
