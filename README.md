@@ -6,7 +6,7 @@ For this project we have used the skeleton of the provided Green Groceries examp
 
 ## Initialization 
 
-Clone / download repository files and run the following to install the required packages:
+Clone / download repository files and navigate into the 'IMDBrainrot' folder and run the following to install the required packages:
 
     pip install -r requirements.txt
 
