@@ -52,8 +52,8 @@ class UserSignupForm(FlaskForm):
         if not self.password.data == self.password_repeat.data:
             raise ValidationError(f'Provided passwords do not match.')
             #REGEX DOWN UNDER
-        if not re.match('^1234$', self.password.data):
-            raise ValidationError(f'Provided Password is not 1234.')
+        if not re.match('^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{1,15}$', self.password.data):
+            raise ValidationError(f'Provided Password does not have a capital letter or is missing a number')
 
 
 class FilterProduceForm(FlaskForm):
