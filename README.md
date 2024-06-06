@@ -1,6 +1,6 @@
 # IMDBrainrot
 
-This project is a moviedatabase with movies that does not make any sense. You can create a user with a login, and you can search up movies from our database consisting of 10000 movies!! Each movie has several attributes which describes them, and you can search these movies up.
+This project is a moviedatabase with movies that does not make any sense. You can create a user with a login, and you can search up movies from our database consisting of 10000 movies!! Each movie has several attributes which describes them, and you can then filter movies and find the movies which you want to see.
 
 For this project we have used the skeleton of the provided Green Groceries example, and we have modified it such that it fit the requirments of our own project.
 
@@ -10,17 +10,15 @@ Clone / download repository files and navigate into the 'IMDBrainrot' folder and
 
     pip install -r requirements.txt
 
-Create a new database in pgAdmin (preferably named IMDBrainrot) and add the following to your .env file:
+Navigate into the utils folder, and run init_db.py to initialize the project.
 
-    SECRET_KEY=<secret_key>
-    DB_USERNAME=postgres || <postgres_user_name>
-    DB_PASSWORD=<postgres_user_password>
-    DB_NAME=IMDBrainrot || <postgres_db_name>
+    python init_db.py
 
-When all this information is present (and correct) the server can be started with:
+Navigate back into the IMDBrainrot folder and run the application using:
 
     flask run
 
+Ignore the folder which is called env, and navigate only into the IMDBrainrot folder
 
 ## Regular expression
 
