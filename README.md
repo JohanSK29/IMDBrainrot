@@ -6,9 +6,7 @@ Clone / download repository files and run the following to install the required 
 
     pip install -r requirements.txt
 
-Create a new database in pgAdmin (preferably named IMDBrainrot) and add the following to your .env file (normally
-.env should be a private file containing user secrets, in this case we have kept it inside the project files for easy
-access for the TAs):
+Create a new database in pgAdmin (preferably named IMDBrainrot) and add the following to your .env file:
 
     SECRET_KEY=<secret_key>
     DB_USERNAME=postgres || <postgres_user_name>
