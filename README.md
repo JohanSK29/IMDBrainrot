@@ -1,5 +1,9 @@
 # IMDBrainrot
 
+This project is a moviedatabase with movies that does not make any sense. You can create a user with a login, and you can search up movies from our database consisting of 10000 movies!! Each movie has several attributes which describes them, and you can search these movies up.
+
+For this project we have used the skeleton of the provided Green Groceries example, and we have modified it such that it fit the requirments of our own project.
+
 ## Initialization 
 
 Clone / download repository files and run the following to install the required packages:
@@ -20,6 +24,12 @@ When all this information is present (and correct) the server can be started wit
 
 ## Regular expression
 
+The regular expression that we have is one on the login page. When you create a user, we have made a regular expression that matches the passwords. Your password HAS to have at least one capital letter and at least one number in it. Furthermore the password can be a maximum of 15 characters long.
+
+
+## E/R diagram
+
+Our E/R diagram is provided as a picture here in the Github.
 
 ## Folder setup 📁
 
@@ -47,7 +57,7 @@ At the root folder of the app (./IMDBrainrot) six more scripts are present with 
 - __queries.py__: Implements functions for each needed query to the database used inside the app (similar to the
   functional part of the models.py file within the example project)
 
-## Routes 📌
+## Routes
 
 Both implemented blueprints come with a __routes.py__ file that initialize a __Blueprint__ object and define _routes_
 for the app.
@@ -61,11 +71,4 @@ for the app.
     - __/signup__: User signup (creation) page
     - __/logout__: Logs user out and sends back to login page
 
-- __Produce__:
-    - __/produce__: Search page for all produce in the database
-    - __/add-produce__: Page where farmer users can add their produce (customers trying to submit will get an error)
-    - __/your-produce__: Page where farmers can view and manage their produce
-    - __/produce/restock/<pk>__: Page where farmers can restock a certain product
-    - __/produce/buy/<pk>__: Page where customers get redirected to in order to buy a certain product
-    - __/produce/your-orders__: Page where customers can view their orders
 
